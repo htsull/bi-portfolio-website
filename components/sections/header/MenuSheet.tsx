@@ -1,3 +1,4 @@
+'use client'
 import {
     Sheet,
     SheetContent,
@@ -6,30 +7,35 @@ import {
     SheetTitle,
     SheetTrigger,
 } from "@/components/ui/sheet"
-import { MenuIcon } from "lucide-react"
 import Nav from "./Nav"
+
 import Logo from "./logo"
 import FooterNav from "../footer/FooterNav"
+import { MenuIcon } from "lucide-react"
+import { useState } from "react"
 
 const MenuSheet = () => {
+    const [isOpen, setIsOpen] = useState<boolean>(false)
+    const handleClose = () => setIsOpen(false)
     return (
         <div className="sm:hidden">
-            <Sheet>
-                <SheetTrigger className="hover:text-orange-500 ">
-                    <MenuIcon />
+            <Sheet open={isOpen} onOpenChange={setIsOpen}>
+                <SheetTrigger className="hover:text-orange-500 items-center flex border rounded-md p-0.5 hover:border-orange-500" onClick={() => setIsOpen(true)}>
+                    <MenuIcon size={32} />
                     <span className="sr-only">Menu</span>
                 </SheetTrigger>
                 <SheetContent className="flex justify-center">
                     <SheetHeader className="border w-full">
-                        <SheetTitle className="mb-8 border-b-2 mt-[.9rem]"><Logo /></SheetTitle>
+                        <SheetTitle className="p-2.5 border-b-2">
+                            <Logo />
+                        </SheetTitle>
                         <SheetDescription className="hidden">
                         </SheetDescription>
-                        <Nav className="flex flex-col gap-6 text-xl" />
+                        <Nav className="flex flex-col gap-6 text-xl" onClick={handleClose} />
                         <FooterNav />
                     </SheetHeader>
                 </SheetContent>
             </Sheet>
-
         </div>
     )
 }

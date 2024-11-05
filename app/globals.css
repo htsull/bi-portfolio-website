@@ -2,8 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer components {
-}
 
 @layer base {
 	:root {
@@ -110,7 +108,7 @@
 
 @layer base {
 	body {
-		@apply bg-background text-foreground;
+		@apply bg-background text-foreground ;
 	}
 	.title {
 		@apply font-serif text-3xl font-bold;
@@ -136,11 +134,3 @@
 	}
 }
 
-@layer base {
-  * {
-    @apply border-border;
-	}
-  body {
-    @apply bg-background text-foreground;
-	}
-}

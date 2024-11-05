@@ -5,12 +5,11 @@ import FooterNav from './FooterNav'
 const Footer = () => {
 
   return (
-    <footer className='flex max-w-5xl flex-col items-center justify-center gap-4 border-t border-red-500 py-16 container'>
+    <footer className='flex max-w-5xl flex-col items-center justify-center  border-t-2 dark:border-white/30 py-16 container'>
       <div className='flex flex-col gap-6'>
         <Nav className='gap-6' />
         <FooterNav />
       </div>
-
     </footer>
   )
 }
