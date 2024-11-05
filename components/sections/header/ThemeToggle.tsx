@@ -8,7 +8,7 @@ const ThemeToggler = () => {
 	return (
 		<div className="flex items-center">
 			<Button
-				className="border hover:text-orange-500 hover:border-orange-500"
+				className="border hover:bg-transparent! hover:text-orange-500 hover:border-orange-500"
 				size={"sm"}
 				variant={"ghost"}
 				onClick={() => {

@@ -21,8 +21,8 @@ const FooterNav = () => {
                 <p>Design with ❤️ and passion by me.</p>
                 <p className='text-xs text-muted-foreground mt-2'>
                     {/* //TODO : Add github last push date */}
-                    <span>Last update : </span>
-                    {getCustomLocaleDateTime()}
+                    <span>Last update : November 5, 2024</span>
+                    {/* {getCustomLocaleDateTime()} */}
                 </p>
             </div>
         </div>

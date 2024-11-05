@@ -28,13 +28,13 @@ export default function RootLayout({
 			<body
 				className={cn(
 					inter.className,
-					"flex min-h-screen flex-col font-sans antialiased ",
+					"flex min-h-screen flex-col font-sans antialiased",
 					inter.variable,
 					playfair.variable
 				)}>
 				<Providers>
 					<Header />
-					<main>{children}</main>
+					<main className="grow">{children}</main>
 					<Footer />
 				</Providers>
 			</body>
