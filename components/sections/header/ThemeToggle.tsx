@@ -4,7 +4,7 @@ import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
 import { Moon, Sun } from "lucide-react";
 
-const themeToggler = () => {
+const ThemeToggler = () => {
 	const { setTheme, resolvedTheme } = useTheme();
 	const [mounted, setMounted] = useState(false);
 
@@ -32,4 +32,4 @@ const themeToggler = () => {
 	);
 };
 
-export default themeToggler;
+export default ThemeToggler;

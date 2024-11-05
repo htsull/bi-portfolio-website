@@ -1,4 +1,3 @@
-import { socialMediaLinks } from '@/constants/socials'
 import React from 'react'
 import Nav from '../header/Nav'
 import FooterNav from './FooterNav'

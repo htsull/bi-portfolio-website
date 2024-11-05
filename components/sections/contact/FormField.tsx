@@ -7,11 +7,12 @@ import {
   FormDescription,
   FormMessage
 } from '@/components/ui/form'
-import { Input } from './ui/input'
+
 import { Textarea } from '@/components/ui/textarea'
+import { Input } from '@/components/ui/input'
 
 interface FormFieldProps {
-  control: Control<any>
+  control: Control
   name: string
   label?: string
   placeholder?: string

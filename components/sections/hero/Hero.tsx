@@ -1,9 +1,9 @@
-import Image from 'next/image'
-import Picture from '@/public/img/picture.jpg'
+// import Image from 'next/image'
+// import Picture from '@/public/img/picture.jpg'
 
-import { Download } from 'lucide-react'
-import { socialMediaLinks } from '@/constants/socials'
-import { Button } from '@/components/ui/button'
+// import { Download } from 'lucide-react'
+// import { socialMediaLinks } from '@/constants/socials'
+// import { Button } from '@/components/ui/button'
 
 const Hero = () => {
   return (
