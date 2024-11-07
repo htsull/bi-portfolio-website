@@ -3,7 +3,7 @@ import Link from 'next/link'
 const logo = () => {
     return (
         <div>
-            <Link href={'/'} className='text-2xl font-serif font-bold hover:text-orange-500'>BS</Link>
+            <Link href={'/'} className='text-3xl font-serif font-bold hover:text-orange-500'>BS</Link>
         </div>
     )
 }

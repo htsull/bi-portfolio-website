@@ -7,8 +7,11 @@ import { Button } from '@/components/ui/button'
 
 const Hero = () => {
   return (
-    <div className='flex gap-8 pt-16 items-center justify-center pb-8 container' id='/'>
-      <div className='items-center justify-center hidden sm:flex'>
+    <div
+      className='container flex items-center justify-center gap-8 bg-black/5 pb-8 pt-16 dark:bg-white/5'
+      id='/'
+    >
+      <div className='hidden items-center justify-center sm:flex'>
         <Image
           className='rounded-full'
           src={Picture}
@@ -16,19 +19,18 @@ const Hero = () => {
           quality={90}
           priority
           placeholder='blur'
-          width={250}
-        // objectFit='contain'
+          width={270}
+          // objectFit='contain'
         />
       </div>
-      <div className='flex flex-col gap-3 items-center justify-center flex-1'>
+      <div className='flex flex-col justify-center gap-3 sm:flex-1 lg:items-center'>
         <h1 className='title no-underline'>
-          Hey, I'm {' '}
-          <span className='transition hover:text-orange-500'>Berthony</span>
+          Hey, I'm <span className='text-orange-500 transition'>Berthony</span>
         </h1>
         <h2 className='subtitle text-xl'>
           I'm a Data Analyst based in Montreal, Canada 🇨🇦
         </h2>
-        <p className='max-w-[500px] text-sm text-muted-foreground text-center'>
+        <p className='max-w-[500px] text-sm text-muted-foreground lg:text-center'>
           Welcome to my data portfolio where I share what I've been working on
           recently, things i've learned along the way, my thoughts and hobbies.
         </p>
@@ -63,13 +65,12 @@ const Hero = () => {
           </div>
         </div>
       </div>
-    </div>)
+    </div>
+  )
 }
 
-
-
-
-{/* <div className='flex flex-col gap-3'>
+{
+  /* <div className='flex flex-col gap-3'>
           <h1 className='title no-underline'>
             Hey, I'm{' '}
             <span className='transition hover:text-orange-500'>Berthony</span>
@@ -111,11 +112,16 @@ const Hero = () => {
               </ul>
             </div>
           </div>
-        </div> */}
-{/* </div>
+        </div> */
+}
+{
+  /* </div>
 
-    </div > */}
-{/* )
-} */}
+    </div > */
+}
+{
+  /* )
+} */
+}
 
 export default Hero
