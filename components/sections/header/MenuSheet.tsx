@@ -25,13 +25,13 @@ const MenuSheet = () => {
                     <span className="sr-only">Menu</span>
                 </SheetTrigger>
                 <SheetContent className="flex justify-center">
-                    <SheetHeader className="border w-full">
-                        <SheetTitle className="p-2.5 border-b-2">
+                    <SheetHeader className=" w-full">
+                        <SheetTitle className="p-2.5 border-b-2 dark:border-white/20">
                             <Logo />
                         </SheetTitle>
                         <SheetDescription className="hidden">
                         </SheetDescription>
-                        <Nav className="flex flex-col gap-6 text-xl" onClick={handleClose} />
+                        <Nav className="flex flex-col gap-6 pt-4 text-xl" onClick={handleClose} />
                         <FooterNav />
                     </SheetHeader>
                 </SheetContent>

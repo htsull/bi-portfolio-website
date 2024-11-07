@@ -1,5 +1,5 @@
 import { socialMediaLinks } from '@/constants/socials'
-import { getCustomLocaleDateTime } from '@/lib/getLocaleTime';
+// import { getCustomLocaleDateTime } from '@/lib/getLocaleTime';
 
 const FooterNav = () => {
     return (

@@ -1,8 +1,13 @@
 import React from 'react'
+import Headline from './Headline'
+import WorkExperience from './WorkExperience'
 
 const About = () => {
   return (
-    <div className='bg-black/5' id='#about'>About</div>
+    <div className='' id='#about'>
+      <Headline />
+      <WorkExperience />
+    </div>
   )
 }
 
