@@ -1,11 +1,16 @@
 import Link from 'next/link'
 
 const logo = () => {
-    return (
-        <div>
-            <Link href={'/'} className='text-3xl font-serif font-bold hover:text-orange-500'>BS</Link>
-        </div>
-    )
+  return (
+    <div>
+      <Link
+        href={'/'}
+        className='hover:text-custom-primary font-serif text-3xl font-bold'
+      >
+        BS
+      </Link>
+    </div>
+  )
 }
 
 export default logo
