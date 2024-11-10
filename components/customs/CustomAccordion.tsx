@@ -11,8 +11,6 @@ import { Button } from '../ui/button'
 import Link from 'next/link'
 
 const CustomAccordion = () => {
-  const index_ = experienceData.length
-  console.log(index_)
   return (
     <div className='w-full'>
       {experienceData.map(item => (
