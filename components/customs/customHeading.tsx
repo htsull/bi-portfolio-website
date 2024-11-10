@@ -9,7 +9,7 @@ const CustomHeading = ({ children, className }: customHeadingProps) => {
   return (
     <h1
       className={cn(
-        `text-customPrimary dark:text-custom-primary my-4 flex justify-center text-center font-serif text-2xl font-bold`,
+        `text-custom-primary dark:text-custom-primary my-4 flex justify-center text-center font-serif text-2xl font-bold`,
         className
       )}
     >

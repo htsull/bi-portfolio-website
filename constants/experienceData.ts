@@ -1,6 +1,6 @@
-import { GraduationCap, LucideIcon, Briefcase } from 'lucide-react'
+import { GraduationCap, Briefcase } from 'lucide-react'
 
-export type timelineDataTypes = {
+type experienceDataTypes = {
   id: number
   period: string
   title?: string
@@ -13,7 +13,7 @@ export type timelineDataTypes = {
   company: string
 }
 
-export const timelineData: timelineDataTypes[] = [
+export const experienceData: experienceDataTypes[] = [
   {
     id: 1,
     period: 'Mars 2023 – Present',
@@ -39,7 +39,7 @@ export const timelineData: timelineDataTypes[] = [
   {
     id: 2,
     period: 'November 2022',
-    title: '',
+    title: 'Student',
     detail: {
       1: 'Master’s degree in Information Processing andData science in Business (TIDE)'
     },
@@ -133,7 +133,7 @@ export const timelineData: timelineDataTypes[] = [
   {
     id: 8,
     period: 'August 2018',
-    title: '',
+    title: 'Student',
     detail: {
       1: "Bachelor's degree in Applied Economics and Statistics."
     },

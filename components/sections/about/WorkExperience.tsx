@@ -1,13 +1,13 @@
+import CustomAccordion from '@/components/customs/CustomAccordion'
 import CustomHeading from '@/components/customs/customHeading'
 import { CornerRightDown } from 'lucide-react'
 
 const WorkExperience = () => {
   return (
-    <div className='container flex justify-center'>
+    <div className='container flex flex-col items-center justify-center'>
       <CustomHeading>Here is my journey below...</CustomHeading>
+      <CustomAccordion />
     </div>
-
-    // className='mb-3 flex items-center gap-2 text-sm font-bold text-orange-500 dark:text-white sm:text-lg'
   )
 }
 

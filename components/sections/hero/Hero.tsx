@@ -25,7 +25,7 @@ const Hero = () => {
       </div>
       <div className='flex flex-col justify-center gap-3 sm:flex-1 lg:items-center'>
         <h1 className='title no-underline'>
-          Hey, I'm <span className='text-orange-500 transition'>Berthony</span>
+          Hey, I'm <span className='transition'>Berthony</span>
         </h1>
         <h2 className='subtitle text-xl'>
           I'm a Data Analyst based in Montreal, Canada 🇨🇦
@@ -53,7 +53,7 @@ const Hero = () => {
               {socialMediaLinks.slice(0, 2).map(link => (
                 <li
                   key={link.name}
-                  className='flex text-4xl transition hover:scale-[115%] hover:text-orange-500'
+                  className='hover:text-custom-primary flex text-4xl transition hover:scale-[115%]'
                 >
                   {/* //TODO : add social media icons */}
                   <a href={link.link} target='_blank'>
@@ -73,7 +73,7 @@ const Hero = () => {
   /* <div className='flex flex-col gap-3'>
           <h1 className='title no-underline'>
             Hey, I'm{' '}
-            <span className='transition hover:text-orange-500'>Berthony</span>
+            <span className='transition hover:'>Berthony</span>
           </h1>
           <h2 className='subtitle text-xl'>
             I'm a Data Analyst based in Montreal, Canada 🇨🇦
@@ -101,7 +101,7 @@ const Hero = () => {
                 {socialMediaLinks.slice(0, 2).map(link => (
                   <li
                     key={link.name}
-                    className='flex text-3xl transition hover:scale-[115%] hover:text-orange-500'
+                    className='flex text-3xl transition hover:scale-[115%] hover:'
                   >
                     //TODO : add social media icons 
                     <a href={link.link} target='_blank'>
