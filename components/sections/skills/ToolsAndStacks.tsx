@@ -7,7 +7,7 @@ import Image from 'next/image'
 export const ToolAndStacks = ({
   items,
   direction = 'left',
-  speed = 'normal',
+  speed = 'slow',
   pauseOnHover = true,
   className
 }: {
