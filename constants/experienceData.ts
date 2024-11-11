@@ -38,7 +38,7 @@ export const experienceData: experienceDataTypes[] = [
   },
   {
     id: 2,
-    period: 'November 2022',
+    period: 'September 2021 - November 2022',
     title: 'Student',
     detail: {
       1: 'Master’s degree in Information Processing andData science in Business (TIDE)'
@@ -132,7 +132,7 @@ export const experienceData: experienceDataTypes[] = [
   },
   {
     id: 8,
-    period: 'August 2018',
+    period: 'December 2013 - August 2018',
     title: 'Student',
     detail: {
       1: "Bachelor's degree in Applied Economics and Statistics."
@@ -142,6 +142,6 @@ export const experienceData: experienceDataTypes[] = [
     buttonText: 'Learn more',
     href: 'https://ctpea.ht/',
     location: 'Port-au-Prince, Haiti',
-    company: 'Applied Economics and Plannig Center'
+    company: "Centre de Techniques de Planification et d'Économie Appliquée"
   }
 ]

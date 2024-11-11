@@ -10,7 +10,7 @@ const Tags = ({ className, children }: tagsProps) => {
     <span
       className={cn(
         className,
-        `text-custom-primary rounded-full bg-black/5 px-2 py-1 font-bold`
+        `text-custom-primary rounded-full bg-black/5 px-2 py-1 font-bold dark:bg-white/10`
       )}
     >
       {children}
