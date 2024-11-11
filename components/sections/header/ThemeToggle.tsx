@@ -2,9 +2,18 @@
 import { Button } from '../../ui/button'
 import { useTheme } from 'next-themes'
 import { Moon, Sun } from 'lucide-react'
+import { useEffect, useState } from 'react'
 
 const ThemeToggler = () => {
   const { setTheme, resolvedTheme } = useTheme()
+  const [mounted, setMounted] = useState(false)
+
+  useEffect(() => {
+    setMounted(true)
+  }, [])
+
+  if (!mounted) return null
+
   return (
     <div className='flex items-center'>
       <Button
