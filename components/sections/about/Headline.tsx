@@ -5,7 +5,7 @@ const Headline = () => {
   return (
     <div className='container justify-center py-8 font-serif text-sm sm:text-base'>
       <CustomHeading>About me</CustomHeading>
-      <p>
+      <p className='text-wrap text-center text-sm md:text-xl'>
         I&apos;m a Data Analyst with over 6 years of experience in analyzing
         complex data sets, extracting and transforming data using{' '}
         <Tags>Python</Tags>, <Tags>SQL</Tags>, <Tags>PowerBI</Tags>, and{' '}
