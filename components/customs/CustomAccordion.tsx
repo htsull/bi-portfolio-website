@@ -17,12 +17,12 @@ const CustomAccordion = () => {
         <Accordion type='single' collapsible key={item.id}>
           <AccordionItem value={`item-${item.id}`}>
             <AccordionTrigger
-              className={`hover:text-custom-primary flex w-full items-center justify-between border border-white/5 bg-black/5 px-4 py-2 font-serif font-bold dark:bg-white/5 ${item.id === 1 ? 'rounded-t-md' : ''}`}
+              className={`flex w-full items-center justify-between border border-white/5 bg-black/5 px-4 py-2 font-serif font-bold hover:text-custom-primary dark:bg-white/5 ${item.id === 1 ? 'rounded-t-md' : ''}`}
             >
               <div className='flex items-center gap-2 text-start'>
                 {<item.icon />}
                 <div className='flex flex-col items-start'>
-                  <p>{item.company}</p>
+                  <p className='text-sm md:text-xl'>{item.company}</p>
                   <p className='hidden lg:flex'>{item.title}</p>
                 </div>
               </div>
