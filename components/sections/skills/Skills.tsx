@@ -3,7 +3,7 @@ import CustomHeading from '@/components/customs/customHeading'
 import React from 'react'
 import SkillsCard from './SkillsCard'
 import { InfiniteMovingCards } from '@/components/ui/infinite-moving-cards'
-import { stackData } from '@/constants/stacksData'
+import { stacksData } from '@/constants/stacksData'
 
 const Skills = () => {
   return (
@@ -15,7 +15,7 @@ const Skills = () => {
       </div>
       <div className='relative flex h-auto flex-col items-center justify-center overflow-hidden rounded-md antialiased'>
         <InfiniteMovingCards>
-          {stackData.map((item, index) => (
+          {stacksData.map((item, index) => (
             <SkillsCard
               key={index}
               title={item.title}
