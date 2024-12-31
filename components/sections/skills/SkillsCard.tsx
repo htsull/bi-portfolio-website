@@ -10,7 +10,7 @@ export default function SkillsCard({ title, icon, desc }: SkillsCardProps) {
   return (
     <div className='flex h-[200px] w-[200px] flex-col items-center justify-center gap-2 rounded-2xl border border-black/15 bg-black/5 shadow dark:border-gray-500 dark:bg-white/5'>
       <Image
-        className='bg-transaprent size-24 rounded-lg p-1'
+        className='bg-transaprent size-20 rounded-lg p-1'
         src={icon}
         alt='product image'
       />
