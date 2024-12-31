@@ -31,7 +31,7 @@ import tensorflowIcon from '@/public/img/stacksImages/tensorflow.png'
 import typescriptIcon from '@/public/img/stacksImages/typescript.png'
 import vscodeIcon from '@/public/img/stacksImages/vscode.png'
 
-export const StackData = [
+export const stackData = [
   {
     title: 'Anaconda',
     icon: anacondaIcon,
