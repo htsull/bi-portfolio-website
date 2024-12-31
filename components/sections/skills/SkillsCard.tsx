@@ -2,7 +2,7 @@ import Image, { StaticImageData } from 'next/image'
 
 type SkillsCardProps = {
   title: string
-  icon: string
+  icon: StaticImageData
   desc: string
 }
 
@@ -13,8 +13,6 @@ export default function SkillsCard({ title, icon, desc }: SkillsCardProps) {
         className='bg-transaprent size-20 rounded-lg p-1'
         src={icon}
         alt='product image'
-        width={16}
-        height={16}
       />
       <h5 className='text-center font-bold tracking-tight text-custom-primary dark:text-custom-primary md:text-xl'>
         {title}
