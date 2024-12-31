@@ -19,7 +19,7 @@ export default function SkillsCard({ title, icon, desc }: SkillsCardProps) {
       </h5>
 
       <div className='flex justify-between text-center'>
-        <span className='md:sm px-2 text-xs font-semibold text-black text-muted-foreground dark:text-white'>
+        <span className='px-2 text-xs font-semibold text-black text-muted-foreground dark:text-white'>
           {desc}
         </span>
       </div>
