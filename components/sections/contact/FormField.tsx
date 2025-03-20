@@ -10,10 +10,12 @@ import {
 
 import { Textarea } from '@/components/ui/textarea'
 import { Input } from '@/components/ui/input'
+import { ContactFormSchema } from '@/lib/schema'
+import { z } from 'zod'
 
 interface FormFieldProps {
-  control: Control
-  name: string
+  control: Control<z.infer<typeof ContactFormSchema>>
+  name: 'message' | 'name' | 'email'
   label?: string
   placeholder?: string
   description?: string
