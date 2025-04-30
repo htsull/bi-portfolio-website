@@ -8,7 +8,7 @@ type SkillsCardProps = {
 
 export default function SkillsCard({ title, icon, desc }: SkillsCardProps) {
   return (
-    <div className='flex h-[200px] w-[200px] flex-col items-center justify-center gap-2 rounded-2xl border border-black/15 bg-black/5 shadow dark:border-gray-500 dark:bg-white/5'>
+    <div className='bg-black/.5 flex h-[200px] w-[200px] flex-col items-center justify-center gap-2 rounded-2xl border border-black/5 shadow-md shadow-slate-200 dark:border-white/10 dark:bg-white/5 dark:shadow-white/20'>
       <Image
         className='bg-transaprent size-20 rounded-lg p-1'
         src={icon}
@@ -19,7 +19,7 @@ export default function SkillsCard({ title, icon, desc }: SkillsCardProps) {
       </h5>
 
       <div className='flex justify-between text-center'>
-        <span className='md:sm px-2 text-xs font-semibold text-black text-muted-foreground dark:text-white'>
+        <span className='px-2 text-xs font-semibold text-black text-muted-foreground dark:text-white'>
           {desc}
         </span>
       </div>
